@@ -1,0 +1,7 @@
+flask run --host=0.0.0.0 es para correr la aplicacion y permitir 
+que otros dispositivos accedan a la aplicacion en determinada direccion ip
+
+
+flask --app app.py run corre la aplicacion solo en el dispositivo actual 
+
+

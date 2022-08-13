@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+</head>
+<body>
+    
+    <a href="/"> Inicio</a>
+    <h3>Inscripcion a invictus </h3>
+    
+    <form method="post" action="#" id="formul">
+        <section id="personal ">    
+        <label for="">nombre  <input required type="text" name="nombre" value="{{ request.form['nombre'] }}" ></label> <br>
+        <label for="">Apellido</label>   <input required type="text" name="apellido" value="{{ request.form['apellido'] }}"><br>
+        <label for="">Telefono</label> <input required type="number" name="tel"  value="{{ request.form['tel'] }}"> <br>
+        <label for="">Correo</label> <input required type="email" name="correo" value="{{ request.form['correo'] }}"> <br>
+        <!--
+        <label for="">tipo dni</label> <select name="td" id="" >
+            <option value="">DNI </option>
+        </select>
+        <label for="">Numero DNI</label> <input required type="number" name="" id=""> <br>
+        
+        <label for="">Localidad </label>
+            <select name="" id=""  required>
+                
+                <option value="">   Achiras</option>
+                <option value="">   Adelia María</option>
+                <option value="">   Alcira Gigena</option>
+                <option value="">   Alejandro Roca</option>
+                <option value="">   Alejo Ledesma</option>
+                <option value="">   Alicia (Córdoba)</option>
+                <option value="">   Almafuerte (Córdoba)</option>
+                <option value="">   Alta Gracia</option>
+                <option value="">   Alto Resbaloso-El Barrial</option>
+                <option value="">   Anisacate</option>
+                <option value="">   Arias (Córdoba)</option>
+                <option value="">   Arroyito (Córdoba)</option>
+                <option value="">   Arroyo Cabral</option>
+                <option value="">   B</option>
+                <option value="">   Ballesteros (Córdoba)</option>
+                <option value="">   Balnearia</option>
+                <option value="">   Berrotarán (Córdoba)</option>
+                <option value="">   Bialet Massé</option>
+                <option value="">   Brinkmann</option>
+                <option value="">   C</option>
+                <option value="">   Calchín (Córdoba)</option>
+                <option value="">   Camilo Aldao</option>
+                <option value="">   Canals (Argentina)</option>
+                <option value="">   Casa Grande (Córdoba)</option>
+                <option value="">   Colonia La Argentina (Córdoba)</option>
+                <option value="">   Córdoba (Argentina)</option>
+                <option value="">   Coronel Moldes (Córdoba)</option>
+                <option value="">   Corral de Bustos</option>
+                <option value="">   Corralito (San Javier)</option>
+                <option value="">   Country Chacras de la Villa-Country San Isidro</option>
+                <option value="">   Cruz Alta (Córdoba)</option>
+                <option value="">   Cuesta Blanca (Argentina)</option>
+                <option value="">   D</option>
+                <option value="">   Deán Funes (ciudad)</option>
+                <option value="">   Del Campillo</option>
+                <option value="">   Despeñaderos</option>
+                <option value="">   Devoto (Córdoba)</option>
+                <option value="">   Dolores (San Esteban - Córdoba)</option>
+                <option value="">   E</option>
+                <option value="">   El Pueblito (San Javier)</option>
+                <option value="">   Elena (Córdoba)</option>
+                <option value="">   Estación Juárez Celman</option>
+                <option value="">   Etruria (Argentina)</option>
+                <option value="">   F</option>
+                <option value="">   Freyre</option>
+                <option value="">   G</option>
+                <option value="">   General Baldissera</option>
+                <option value="">   General Cabrera</option>
+                <option value="">   General Deheza</option>
+                <option value="">   General Levalle</option>
+                <option value="">   General Roca (Córdoba)</option>
+                <option value="">   Guatimozín (Argentina)</option>
+                <option value="">   H</option>
+                <option value="">   Hernando (Córdoba)</option>
+                <option value="">   Huerta Grande</option>
+                <option value="">   Huinca Renancó</option>
+                <option value="">   I</option>
+                <option value="">   Inriville</option>
+                <option value="">   Isla Verde (Argentina)</option>
+                <option value="">   J</option>
+                <option value="">   James Craik</option>
+                <option value="">   José de la Quintana (Córdoba)</option>
+                <option value="">   Jovita (Córdoba)</option>
+                <option value="">   Justiniano Posse (localidad)</option>
+                <option value="">   L</option>
+                <option value="">   La Carlota (Argentina)</option>
+                <option value="">   La Cumbre (Córdoba)</option>
+                <option value="">   La Falda</option>
+                <option value="">   La Francia</option>
+                <option value="">   La Para</option>
+                <option value="">   La Población (Córdoba)</option>
+                <option value="">   La Rancherita</option>
+                <option value="">   La Serranita</option>
+                <option value="">   Laborde (Argentina)</option>
+                <option value="">   Laboulaye</option>
+                <option value="">   Laguna Larga</option>
+                <option value="">   Las Acequias</option>
+                <option value="">   Las Chacras (Villa de las Rosas)</option>
+                <option value="">   Las Higueras</option>
+                <option value="">   Las Perdices</option>
+                <option value="">   Las Tapias (Córdoba)</option>
+                <option value="">   Leones (Argentina)</option>
+                <option value="">   Los Cerrillos (Córdoba)</option>
+                <option value="">   Los Cocos</option>
+                <option value="">   Los Romeros (Argentina)</option>
+                <option value="">   Los Surgentes</option>
+                <option value="">   Luque (Argentina)</option>
+                <option value="">   M</option>
+                <option value="">   Malagueño (Argentina)</option>
+                <option value="">   Marcos Juárez</option>
+                <option value="">   Mayu Sumaj</option>
+                <option value="">   Mina Clavero</option>
+                <option value="">   Molinari (Córdoba)</option>
+                <option value="">   Monte Buey</option>
+                <option value="">   Monte Cristo</option>
+                <option value="">   Monte Maíz</option>
+                <option value="">   Morrison (Argentina)</option>
+                <option value="">   Morteros (ciudad)</option>
+                <option value="">   N</option>
+                <option value="">   Noetinger</option>
+                <option value="">   O</option>
+                <option value="">   Oliva (Córdoba)</option>
+                <option value="">   Oncativo</option>
+                <option value="">   Ordóñez (Argentina)</option>
+                <option value="">   P</option>
+                <option value="">   Pascanas</option>
+                <option value="">   Pilar (Córdoba)</option>
+                <option value="">   La Playosa</option>
+                <option value="">   Porteña</option>
+                <option value="">   Pozo del Molle</option>
+                <option value="">   Q</option>
+                <option value="">   Quilino</option>
+                <option value="">   R</option>
+                <option value="">   Río Primero (Córdoba)</option>
+                <option value="">   Río Segundo (ciudad)</option>
+                <option value="">   Rumi Huasi</option>
+                <option value="">   S</option>
+                <option value="">   Sacanta</option>
+                <option value="">   Sampacho</option>
+                <option value="">   San Antonio de Arredondo</option>
+                <option value="">   San Basilio (Córdoba)</option>
+                <option value="">   San Esteban (Córdoba)</option>
+                <option value="">   San Francisco del Chañar</option>
+                <option value="">   San José de la Dormida</option>
+                <option value="">   San Marcos Sud</option>
+                <option value="">   San Pedro (Córdoba)</option>
+                <option value="">   San Roque (Córdoba)</option>
+                <option value="">   Santa Catalina (Río Cuarto)</option>
+                <option value="">   Santa María de Punilla</option>
+                <option value="">   Santa Mónica (Argentina)</option>
+                <option value="">   Santa Rosa de Río Primero</option>
+                <option value="">   Santiago Temple</option>
+                <option value="">   Saturnino María Laspiur (Córdoba)</option>
+                <option value="">   Sebastián Elcano (Córdoba)</option>
+                <option value="">   Serrano (Córdoba)</option>
+                <option value="">   Serrezuela (Argentina)</option>
+                <option value="">   T</option>
+                <option value="">   Tancacha</option>
+                <option value="">   Tanti</option>
+                <option value="">   Tío Pujio</option>
+                <option value="">   Toledo (Córdoba)</option>
+                <option value="">   Tránsito (Córdoba)</option>
+                <option value="">   U</option>
+                <option value="">   Ucacha</option>
+                <option value="">   V</option>
+                <option value="">   Valle de Anisacate</option>
+                <option value="">   Valle Hermoso (Córdoba)</option>
+                <option value="">   Vicuña Mackenna (Argentina)</option>
+                <option value="">   Villa Ascasubi</option>
+                <option value="">   Villa Carlos Paz</option>
+                <option value="">   Villa Cura Brochero</option>
+                <option value="">   Villa de las Rosas</option>
+                <option value="">   Villa de los Ranchos</option>
+                <option value="">   Villa de María</option>
+                <option value="">   Villa de Soto (Argentina)</option>
+                <option value="">   Villa del Rosario (Córdoba)</option>
+                <option value="">   Villa del Totoral</option>
+                <option value="">   Villa Giardino</option>
+                <option value="">   Villa Huidobro</option>
+                <option value="">   Villa La Bolsa</option>
+                <option value="">   Villa Los Aromos</option>
+                <option value="">   Villa Nueva (Córdoba)</option>
+                <option value="">   Villa Parque Santa Ana</option>
+                <option value="">   Villa Parque Síquiman</option>
+                <option value="">   Villa Río Icho Cruz</option>
+                <option value="">   Villa San Nicolás</option>
+                <option value="">   Villa Santa Cruz del Lago</option>
+                <option value="">   Villa Sarmiento (San Alberto)</option>
+                <option value="">   Villa Valeria</option>
+            </select> <br> 
+    
+        <label for="">Calle</label> <input required type="text"> <br>
+        <label for=""> numero </label> <input type="number" required name="" id=""> <br>
+        <Label>Edad </Label> <input type="number" required>  <br>
+        <label for="">Peso (kg)</label> <input type="number" required name="" id=""> <br>
+        <label for=""> altura(cm) </label> <input type="number" required name="" id="">
+        <br><button>Siguiente</button>
+
+    </section>
+
+    <section id="depor">
+
+        <label for=""> Datos de contacto familiar</label><br>
+        <label for="">nombre  <input required type="text"></label> <br>
+        <label for="">Apellido</label>   <input required type="text"><br>
+        <label for="">Telefono</label> <input required type="number" name="tel" id=""> <br>
+        <label for="">Correo</label> <input required type="email" name="" id=""> <br>
+
+        <label for=""> Datos de contacto de Medico personal</label><br>
+        <label for="">nombre y apellido <input required type="text"></label> <br>
+        <label for="">Telefono</label> <input required type="number" name="tel" id=""> <br>
+        <label for="">Correo</label> <input required type="email" name="" id=""> <br>
+        <label for="">Clinica </label> <input required type="text" name="" id=""> <br>
+        <button>cargar documentacion</button>
+        <button> Llevar a sucursal </button> <br>
+        
+        <label for="">Autorizacion menor </label><input type="file" name="" id=""><br>
+        <label for="">Ficha medica </label> <input type="file" name="" id="">
+    </section>
+-->
+    <button type="submit" >Finalizar</button>
+    </form>
+    <!-- al finalizar se envia un correo con el monto y un codigo para llevar de manera presencial -->
+    
+    
+    <!--  el script sirve para vaciar los campos del formulario cuando se hae el submit -->
+    <!-- ver si reseteo el formulario o redirijo a pagina principal -->
+     <script> 
+        document.addEventListener('DOMContentLoaded', function(){
+          let formulario = document.getElementById('formul');
+          formulario.addEventListener('submit', function() {
+            alert("formulario exitoso")
+            // formulario.reset();
+          });
+        });
+      </script>
+</body>
+</html>
